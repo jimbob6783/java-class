@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class LabProgram {
+
+//Method below defining drivingCost, returns formula for drivingCost
+public static double drivingCost(double milesPerGallon, double dollarsPerGallon, double milesDriven) { 
+   return (milesDriven / milesPerGallon) * dollarsPerGallon;
+}
+   // main
+   public static void main(String[] args) {
+   
+   //create scnr for user input
+   Scanner scnr = new Scanner(System.in);
+   
+   //Define double of milesPerGallon
+   double milesPerGallon;
+   
+   //Define double of dollarsPerGallon
+   double dollarsPerGallon;
+   
+   //Defines the first user input as milesPerGallon, 2nd as dollarsPerGallon
+   milesPerGallon = scnr.nextDouble();
+   dollarsPerGallon = scnr.nextDouble();
+   
+   //Single print statement calling drivingCost method with predefined miles of 10, 50, and 400
+   System.out.printf("%.2f %.2f %.2f", drivingCost(milesPerGallon, dollarsPerGallon, 10), drivingCost(milesPerGallon,
+      dollarsPerGallon, 50), drivingCost(milesPerGallon, dollarsPerGallon, 400));
+   }
+}
