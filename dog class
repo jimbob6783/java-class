@@ -1,4 +1,4 @@
-public class Dog {
+public class Dog extend Pet {
     
     private int dogSpaceNumber; // Space number allocated to the dog
     private double dogWeight; // Weight of the dog
