@@ -1,0 +1,46 @@
+public class Dog {
+    
+    private int dogSpaceNumber; // Space number allocated to the dog
+    private double dogWeight; // Weight of the dog
+    private int grooming; // 0 for no grooming required, 1 for grooming required
+
+     // Constructor to initialize all attributes of the Dog class.
+    public Dog(int dogSpaceNumber, double dogWeight, int grooming) {
+    
+        this.dogSpaceNumber = dogSpaceNumber; // dogSpaceNumber allocated to dog.
+        this.dogWeight = dogWeight; // dogWeight Weight of the dog.
+        this.grooming = grooming; // grooming 0 if no grooming required, 1 if grooming is required
+    }
+    
+    // Accessor (getter) and Mutator (setter) methods for each attribute
+    // Gets dogSpaceNumber returns dogSpaceNumber.
+    public int getDogSpaceNumber() {
+        return dogSpaceNumber;
+    }
+    
+    //Sets dogSpaceNumber.
+    public void setDogSpaceNumber(int dogSpaceNumber) {
+        this.dogSpaceNumber = dogSpaceNumber;
+    }
+    
+    //Gets dogWeight returns dogWeight.
+    public double getDogWeight() {
+        return dogWeight;
+    }
+    
+    //Sets dogWeight
+    //Sets dogWeight to the specified value.
+    public void setDogWeight(double dogWeight) {
+        this.dogWeight = dogWeight;
+    }
+    
+    // Gets grooming returns grooming. 0 if no grooming required, 1 if grooming is required.
+    public int getGrooming() {
+        return grooming;
+    }
+    
+        // Sets grooming to the specified value. 0 if no grooming required, 1 if grooming is required.
+    public void setGrooming(int grooming) {
+        this.grooming = grooming;
+    }
+}
